@@ -12,29 +12,20 @@
 </head>
 
 <body>
-    <?php include_once('./data/header.phtml') ?>
-    <nav>
-        <button onclick="dynamicDisplayDiv('even')"><b>Home</b></button>
-        <!-- Adiciona a função apropriada ao botão Home com base na página atual -->
-        <button onclick="dynamicDisplayDiv('odd')" class="<?php echo ($current_file === 'projetos.php') ? 'hidden' : ''; ?>"><b>Contate-Me</b></button>
-        <button onclick="redirecionarProj()"><b>Projetos</b></button>
-    </nav>
     <div id="box">
         <div id="box-content">
             <div class="content">
                 <div id="left">
                     <div class="hello">
-                        <h1>Hello World</h1>
                     </div>
                     <div id="photo-div">
-                        <img id="photo" class="circle" src="./img/me/Me.jpg" alt="Minha-foto">
+                        <img id="photo" class="circle" src="./img/me/IMG_0629.JPG" alt="Minha-foto">
                     </div>
                     <div id="info">
                         <div class="more-info">
-                            <h2>Minhas informações</h2>
-                            <p>Nome: Jean Gabriel Henicka Tormes</p>
-                            <p>E-mail: jeangabriel0990@gmail.com</p>
-                            <p>Telefone: +55 45 99991-7097</p>
+                            <p>Nome: Gabriel Eduardo Monsani</p>
+                            <p>E-mail: gabrieleduardomonsani0@hotmail.com</p>
+                            <p>Telefone: +55 45 9998055937</p>
                             <div id="social-medias">
                             </div>
                         </div>
@@ -46,11 +37,9 @@
                             <h1>Sobre Mim</h1>
                         </div>
                         <div id="text">
-                            <p>Olá Mundo, me chamo Jean.</p>
-                            <p>Sou Estudante de Tecnologia e Metodologias de Desenvolvimento de Softwares. Comecei a fundo nessa area a algum tempo mas sempre tive interesse, então aprendi bastante coisa sobre tecnologia por conta própria, ou por curiosidade ou por necessidade.</p>
-                            <p>Faço faculdade de T.I e cursos que envolvem desenvolvimento de aplicações e suas metodologias.</p>
-                            <p> Futuramente pretendo fazer Engenharia de Software ou Ciência da Computação, expandir meu conhecimento nessa area e trabalhar com robótica e inteligência artificial.</p>
-                            <p>Atualmente sou um desenvolvedor Trainee Full Stack.</p>
+                            <p>Olá, me chamo Gabriel.</p>
+                            <p>Sou estudante do quarto periodo de Engenhararia de Software na faculdade Uniguaçu-FAESI.</p>
+                            <p>Atualmente trabalho como estagiário em desenvolvimento web na empresa Friella.</p>
                         </div>
                         <p>
                         <div id="list">
@@ -61,8 +50,6 @@
                                     <li class="css">CSS</li>
                                     <li class="js">JS</li>
                                     <li class="php">PHP</li>
-                                    <li class="sql">C#</li>
-                                    <li class="c">C++</li>
                                 </ul>
                             </div>
                             <div id="right">
@@ -70,15 +57,10 @@
                                 <ul>
                                     <li class="html">Git</li>
                                     <li class="css">mySQL</li>
-                                    <li class="js">Agile</li>
                                     <li class="php">Sonar</li>
-                                    <li class="sql">.Net SDK</li>
                                     <li class="c">Composer</li>
                                 </ul>
                             </div>
-                        </div>
-                        <div id="robot-box">
-                            <img id="robot" class="" src="./img/robots/piano.png" alt="robot">
                         </div>
                     </div>
                     <div id="odd" class="hidden">
@@ -149,9 +131,7 @@
     }
     ?>
 
-    <?php include_once('./data/footer.phtml') ?>
-    <script src="./data/script-port.js"></script>
-    <script src="./data/general-script.js"></script>
+
 </body>
 
 </html>

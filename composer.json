@@ -1,5 +1,5 @@
 {
-    "name": "kurokagami/onboard-portifolio",
+    "name": "gabrelmonsani/VelocityFramework",
     "description": "Adaptando portifolio para utilizar composer",
     "type": "project",
     "require": {
@@ -17,7 +17,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Kuro Kagami"
+            "name": "Gabriel Monsani"
         }
     ],
     "minimum-stability": "alpha"

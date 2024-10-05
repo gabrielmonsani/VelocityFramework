@@ -1,24 +1,24 @@
 /* Estilos globais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Verdana', sans-serif; /* Fonte alterada para Verdana */
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url("../img/bg/bg-robot.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #f0f4c3; /* Cor de fundo mais clara */
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background-color: #4a148c; /* Roxo forte */
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
+    padding: 10px 20px;
 }
 
 .header-container {
@@ -29,7 +29,7 @@ header {
 
 .header-container img {
     max-width: 150px;
-    height: 80px;
+    height: auto;
 }
 
 .header-container img:first-child {
@@ -41,7 +41,7 @@ header {
 }
 
 nav {
-    background-color: #1b84b5;
+    background-color: #ff7043; /* Laranja forte */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -50,12 +50,20 @@ nav {
     align-items: center;
     justify-content: center;
     margin-bottom: auto;
-} nav button {
+}
+
+nav button {
     padding: 10px;
     margin: 10px;
-    border: solid black 1px;
+    border: none;
     background-color: #333;
-    color:#ffffff;
+    color: #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #555; /* Escurece ao passar o mouse */
 }
 
 footer {
@@ -76,6 +84,7 @@ footer {
     flex: 2 1 60%; /* flex-grow: 2, flex-shrink: 1, flex-basis: 60% */
     padding: 20px;
 }
+
 /* Estilos para o conteúdo principal */
 .content {
     display: flex;
@@ -84,12 +93,14 @@ footer {
     padding: 20px;
 }
 
-.hello{
+.hello {
     text-align: center;
     padding-bottom: 10px;
+    font-size: 24px; /* Aumenta o tamanho da fonte */
+    color: #4a148c; /* Roxo para o texto de boas-vindas */
 }
 
-#photo-div{
+#photo-div {
     text-align: center;
     margin-top: 40px;
 }
@@ -103,12 +114,17 @@ footer {
 #info {
     margin-top: 80px;
     padding: 10px;
-    box-shadow: #007BFF 0px 0px 5px;
+    box-shadow: #6a1b9a;
     border-radius: 10%;
-} #social-medias{
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+}
+
+#social-medias {
     display: flex;
     justify-content: space-between;
-} #social-medias img{
+}
+
+#social-medias img {
     height: 40px;
     padding: 5px;
     filter: drop-shadow(0 0.3rem 0.50rem rgba(0, 0, 0, 0.9));
@@ -125,54 +141,55 @@ button {
 }
 
 /* Estilos adicionais */
-#text  {
+#text {
     margin-top: 20px;
-    font-family: cursive;
+    font-family: 'Georgia', serif; /* Fonte serif para maior destaque */
     text-shadow: 0 0 12px rgb(128, 128, 128);
 }
 
 #list {
-    font-family: cursive;
+    font-family: 'Georgia', serif; /* Alterada para Georgia */
     display: flex;
 }
 
 #list .listagem {
-    text-shadow: 0 0 12px rgb(128, 128, 128);
+    text-shadow: 0 0 12px #6a1b9a;
 }
 
 #list .html {
-    text-shadow: 0 0 12px orange;
+    text-shadow: 0 0 12px #6a1b9a;
 }
 
 #list .css {
-    text-shadow: 0 0 12px rgb(22, 197, 255);
+    text-shadow: 0 0 12px #6a1b9a;
 }
 
 #list .js {
-    text-shadow: 0 0 12px yellow;
+    text-shadow: 0 0 12px #6a1b9a;
 }
 
 #list .c {
-    text-shadow: 0 0 12px rgb(0, 255, 34);
+    text-shadow: 0 0 12px #6a1b9a;
 }
 
 #list .php {
-    text-shadow: 0 0 12px rgb(212, 0, 255);
+    text-shadow: 0 0 12px #6a1b9a;
 }
 
 #list .sql {
-    text-shadow: 0 0 12px blue
+    text-shadow: 0 0 12px #6a1b9a;
 }
-#robot-box{
+
+#robot-box {
     display: flex;
     justify-content: right;
 }
+
 #robot {
     max-width: 150px;
     max-height: auto;
     margin-left: 25%;
 }
-
 
 /*---------------------------------------------*/
 
@@ -184,14 +201,14 @@ form {
 }
 
 fieldset.box-form {
-    border: none;
+    border: none; /* Remove a borda azul */
     z-index: 1;
-    box-shadow: #333 0px 0px 10px;
     padding: 30px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente */
 }
 
 fieldset.box-form div {
@@ -209,11 +226,14 @@ fieldset.box-form select {
     font-size: large;
 }
 
-#phone-field{
+#phone-field {
     display: flex;
     flex-direction: row;
     padding: 10px;
-} #phone-field .left, .right{
+}
+
+#phone-field .left,
+.right {
     margin: 1%;
 }
 
@@ -224,11 +244,15 @@ fieldset.box-form .submit {
 
 fieldset.box-form button.text-button {
     padding: 10px 20px;
-    background-color: #1b84b5;
+    background-color: #4a148c; /* Roxo */
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+fieldset.box-form button.text-button:hover {
+    background-color: #6a1b9a; /* Roxo mais forte ao passar o mouse */
 }
 
 textarea {
@@ -242,7 +266,6 @@ textarea {
     box-sizing: border-box;
 }
 
-
 /* Estilos da Página de Projetos */
 #box {
     display: flex;
@@ -250,7 +273,7 @@ textarea {
     align-items: center;
     width: 100%;
     height: 100%;
-    margin: 2% 0% 2% 0%;
+    margin: 2% 0;
 }
 
 #box-content {
@@ -264,15 +287,11 @@ textarea {
     border-radius: 10px;
 }
 
-
-
-#text-proj  {
+#text-proj {
     margin: 20px 0px 20px 30px;
-    font-family: cursive;
+    font-family: 'Georgia', serif; /* Alterada para Georgia */
     text-shadow: 0 0 12px rgb(128, 128, 128);
 }
-
-
 
 #photo-project {
     width: 100%;
@@ -287,14 +306,16 @@ textarea {
     gap: 10px;
     margin-bottom: 0;
     justify-content: center;
-} #buttons button:hover {
+}
+
+#buttons button:hover {
     box-shadow: #333 3px 3px 3px;
 }
 
 #project-info-container {
     display: flex;
     flex-direction: column;
-    font-family: cursive;
+    font-family: 'Georgia', serif; /* Alterada para Georgia */
     text-shadow: 0 0 12px rgb(128, 128, 128);
     text-align: center;
     justify-content: center;
@@ -304,11 +325,11 @@ textarea {
     margin: 5%;
     margin-top: 4%;
     font-size: x-large;
+    color: #4a148c; /* Roxo para o título do projeto */
 }
 
 .project-image {
     margin-right: 5px;
-
     width: 100%;
     height: auto;
     max-width: 400px;
@@ -328,56 +349,10 @@ textarea {
     text-align: center;
     border: solid black 1px;
     background-color: #333;
-    color:#ffffff;
-} .link:hover{
+    color: #ffffff;
+}
+
+.link:hover {
     box-shadow: #333 3px 3px 3px;
-}
-
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
-    .content, #contents {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #left, #right {
-        width: 100%;
-    }
-
-    #photo {
-        max-width: 200px;
-    }
-
-    .header-container img {
-        max-width: 100px;
-        height: auto;
-    }
-
-    #phone-field {
-        flex-direction: column;
-        align-items: left;
-        
-    } #phone-field select{
-        max-width: 30%;
-    }
-
-    fieldset.box-form {
-        padding: 10px;
-
-    }
-}
-
-@media (max-width: 480px) {
-    button, .link {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .header-container img {
-        max-width: 80px;
-    }
-
-    nav {
-        height: auto;
-    }
+    transition: all 0.3s;
 }
